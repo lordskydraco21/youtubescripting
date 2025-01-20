@@ -20,3 +20,28 @@ some functions that needs to be created
 
 
 
+
+Here are some additional function ideas that could be created for YouTube channel and video data retrieval:
+
+- Get the channel name using the channel id
+- Get the number of subscribers for a YouTube channel using the channel id
+- Get the upload schedule (days and times) for a YouTube channel using the channel id
+- Get the average video length for a YouTube channel using the channel id
+- Get the total watch time for all videos in a YouTube channel using the channel id
+- Get the most recent video from a YouTube channel using the channel id
+- Get the video with the highest engagement rate (likes + comments / views) using the channel id
+- Get the most shared video from a YouTube channel using the channel id
+- Get the number of comments for each video in a YouTube channel using the channel id
+- Get the number of likes for each video in a YouTube channel using the channel id
+- Get the number of dislikes for each video in a YouTube channel using the channel id
+- Get the top 10 keywords used in video titles for a YouTube channel using the channel id
+- Get the top 10 keywords used in video descriptions for a YouTube channel using the channel id
+- Get the list of all playlists created by a YouTube channel using the channel id
+- Get the number of videos in each playlist for a YouTube channel using the channel id
+- Get the number of views for each playlist in a YouTube channel using the channel id
+- Get the list of videos with closed captions enabled using the channel id
+- Get the most recent comments from a YouTube channel using the channel id
+- Get the number of videos uploaded in the last 30 days for a YouTube channel using the channel id
+- Get the list of videos with the highest retention rate (average view duration) using the channel id
+
+These ideas can help enhance the functionality of your YouTube scripting project by providing more comprehensive data retrieval options.
