@@ -17,6 +17,6 @@ def get_channel_id_from_video_id(video_id):
     else:
         raise ValueError("No video found with the provided video ID.")
 
-video_id = "YOUR_VIDEO_ID_HERE"  # Replace with your video ID
+video_id = "dQw4w9WgXcQ"  # Replace with your video ID
 channel_id = get_channel_id_from_video_id(video_id)
 print(f"Channel ID: {channel_id}")
