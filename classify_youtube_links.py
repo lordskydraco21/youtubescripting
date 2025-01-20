@@ -44,35 +44,11 @@ def main():
         "https://youtu.be/dRcs98Zmfi4",
         "https://youtu.be/4EgOR8ALCHE",
         "https://youtu.be/Mpf4ntp0YJs",
-        "https://youtu.be/v4sCCVinN-U",
-        "https://youtu.be/owe9cPEdm7k",
-        "https://youtu.be/PJYWANz2-fA",
-        "https://youtube.com/playlist?list=PLP1Z3Rf9MJpD55AHHGXgfKwmiKB6dUzRo",
-        "https://youtube.com/playlist?list=PLP1Z3Rf9MJpCPL2jm8uZ-uzt51eJOYoF8",
-        "https://youtube.com/playlist?list=PLZdXRHYAVxTIVkiqT5N9IHcX5I4y7vCNp",
-        "https://youtube.com/c/WhatIfScienceShow",
-        "https://youtube.com/channel/UCJ_dsa5WPjwNGK8PLnB18Bw",
-        "https://youtube.com/c/WatchDataVerified",
-        "https://youtube.com/c/TallyStat",
-        "https://youtube.com/c/reigarw",
-        "https://youtube.com/channel/UC1wjrBtYqZtC3HeQydqZscA",
-        "https://www.youtube.com/watch?v=aKOJGzNEnlc",
-        "https://www.youtube.com/watch?v=AhAay4FT-nE",
-        "https://www.youtube.com/watch?v=B1ouIlaGlQg",
-        "https://www.youtube.com/watch?v=7qz9E4KUJ4w",
-        "https://www.youtube.com/watch?v=DVQ29IkEmM0",
-        "https://www.youtube.com/playlist?list=PLXXRE-F0fw2XVppL6w1g2f_m1h9Wy7rX8",
-        "https://www.youtube.com/playlist?list=PLP1Z3Rf9MJpA2qFI3nCK3kca7upsRI1ZE",
-        "https://www.youtube.com/channel/UCJ_dsa5WPjwNGK8PLnB18Bw",
-        "https://www.youtube.com/channel/UCL2hOcfXAxD44bGz0JIf-dA",
-        "https://www.youtube.com/channel/UC4R8DWoMoI7CAwX8_LjQHig",
-        "https://www.youtube.com/watch?v=LHqvDyC1uVQ&list=PLXXRE-F0fw2XVppL6w1g2f_m1h9Wy7rX8",
-        "https://www.youtube.com/watch?v=62o7Qwnnnh0&list=PLP1Z3Rf9MJpA2qFI3nCK3kca7upsRI1ZE"
+        "https://youtu.be/v4sCCVinN-"
     ]
-
-    for link in links:
-        link_type, link_id = classify_youtube_link(link)
-        print(f"Link: {link}\nType: {link_type}\nID: {link_id}\n")
+link = str(input("Enter a YouTube link: "))
+link_type, link_id = classify_youtube_link(link)
+print(f"Link: {link}\nType: {link_type}\nID: {link_id}\n")
 
 if __name__ == "__main__":
     main()
