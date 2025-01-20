@@ -45,3 +45,35 @@ Here are some additional function ideas that could be created for YouTube channe
 - Get the list of videos with the highest retention rate (average view duration) using the channel id
 
 These ideas can help enhance the functionality of your YouTube scripting project by providing more comprehensive data retrieval options.
+
+
+
+Here are the functions categorized based on their type:
+
+### Video Functions
+- Get channel id using video id
+- Get all information about a video using video id
+- Get meta tags using video id
+- Get the most liked video from a YouTube channel using channel id
+- Get the most disliked video from a YouTube channel using channel id
+- Get the video with the most comments in the YouTube channel using channel id
+- Get the longest video based on time-length from a YouTube channel using channel id
+- Get the oldest video from a YouTube channel using channel id
+
+### Channel Functions
+- Get total number of videos from a YouTube channel using channel id
+- Get list of all video ids from a YouTube channel using channel id
+- Get total number of views from a YouTube channel using channel id
+- Get the age of the channel using channel id
+- Get list of all links from video description using channel id
+- Get all video information in CSV, SQLite3, TXT using channel id
+
+### Playlist Functions
+- Get total number of playlists and their playlist ids
+- Get list of video ids from a playlist using playlist id
+- Get total length of a playlist using playlist id
+
+### Other Functions
+- Get URLs from a text
+
+These categorizations should help in organizing the functions based on their types for easier implementation and management.
