@@ -6,12 +6,14 @@ def classify_youtube_link(link):
     playlist_pattern = r"(?:https?:\/\/)?(?:www\.)?(?:m\.)?youtube\.com\/playlist\?list=([a-zA-Z0-9_-]+)"
     channel_pattern = r"(?:https?:\/\/)?(?:www\.)?(?:m\.)?youtube\.com\/channel\/([a-zA-Z0-9_-]+)"
     custom_channel_pattern = r"(?:https?:\/\/)?(?:www\.)?youtube\.com\/c\/([a-zA-Z0-9_-]+)"
+    shorts_pattern = r"(?:https?:\/\/)?(?:www\.)?(?:m\.)?youtube\.com\/shorts\/([a-zA-Z0-9_-]+)"
 
     video_match = re.match(video_pattern, link)
     short_video_match = re.match(short_video_pattern, link)
     playlist_match = re.match(playlist_pattern, link)
     channel_match = re.match(channel_pattern, link)
     custom_channel_match = re.match(custom_channel_pattern, link)
+    shorts_match = re.match(shorts_pattern, link)
 
     if video_match:
         return "video", video_match.group(1)
@@ -23,6 +25,8 @@ def classify_youtube_link(link):
         return "channel", channel_match.group(1)
     elif custom_channel_match:
         return "channel", custom_channel_match.group(1)
+    elif shorts_match:
+        return "shorts", shorts_match.group(1)
     else:
         return "unknown", None
 
@@ -44,11 +48,13 @@ def main():
         "https://youtu.be/dRcs98Zmfi4",
         "https://youtu.be/4EgOR8ALCHE",
         "https://youtu.be/Mpf4ntp0YJs",
-        "https://youtu.be/v4sCCVinN-"
+        "https://youtu.be/v4sCCVinN-",
+        "https://m.youtube.com/shorts/abc123",
+        "https://www.youtube.com/shorts/xyz456"
     ]
-link = str(input("Enter a YouTube link: "))
-link_type, link_id = classify_youtube_link(link)
-print(f"Link: {link}\nType: {link_type}\nID: {link_id}\n")
+    for link in links:
+        link_type, link_id = classify_youtube_link(link)
+        print(f"Link: {link}\nType: {link_type}\nID: {link_id}\n")
 
 if __name__ == "__main__":
     main()
